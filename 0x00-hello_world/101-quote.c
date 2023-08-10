@@ -9,6 +9,6 @@
 int main(void)
 {
 char sentence[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-write(1, sentence, 59);
+fwrite(1, sentence, 59);
 return (1);
 }
