@@ -1,5 +1,5 @@
 #include <stdio.h>
-/* 
+/**
  * Description: Printing sentence using the puts function 
 */
 int main(void)
