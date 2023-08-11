@@ -8,39 +8,25 @@
  */
 int main(void)
 {
-int n;
 int i;
 int j;
-int k;
 
-for (n = 0; n < 10; n++)
+for (i = 0; i <= 99; i++)
 {
-for (i = 0; i < 10; i++)
+for (j = i + 1; j <= 99; j++)
 {
-for (j = n; j < 10; j++)
-{
-for (k = i; k < 10; k++)
-{
-if ( k == i && j == n)
-{
-  continue;
-}
-putchar(n + '0');
-putchar(i + '0');
+putchar((i / 10) + '0');
+putchar((i % 10) + '0');
 putchar(' ');
-putchar(j + '0');
-putchar(k + '0');
-
-if (n != 9 || i != 8 || j != 9 || k != 9)
+putchar((j / 10) + '0');
+putchar((j % 10) + '0');
+if (i < 98 || j < 99)
 {
 putchar(',');
 putchar(' ');
 }
 }
 }
-}
-}
 putchar('\n');
 return (0);
 }
-
