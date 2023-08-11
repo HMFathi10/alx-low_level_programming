@@ -20,7 +20,7 @@ putchar(i + '0');
 if (n != 8 || i != 9)
 {
 putchar(',');
-putchar(' ');      
+putchar(' ');
 }
 
 }
