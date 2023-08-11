@@ -16,7 +16,7 @@ for (n = 0; n < 10; n++)
 {
 for (i = 0; i < 10; i++)
 {
-for (j = 0; j < 10; J++)
+for (j = 0; j < 10; j++)
 {
 putchar(n + '0');
 putchar(i + '0');
