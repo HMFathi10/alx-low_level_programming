@@ -23,6 +23,7 @@ for (k = i + 1; k < 10; k++)
 {
 putchar(n + '0');
 putchar(i + '0');
+putchar(' ');
 putchar(j + '0');
 putchar(k + '0');
 
