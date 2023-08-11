@@ -8,7 +8,7 @@
  *
  * Description: Check if given number is positive or negative or zero
  *
- * Return - Always 0 (Success)
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
