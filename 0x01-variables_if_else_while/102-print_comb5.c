@@ -18,7 +18,7 @@ for (i = 0; i < 10; i++)
 {
 putchar(n + '0');
 putchar(i + '0');
-if (n != 9 || i != 9 || j != 9)
+if (n != 9 || i != 9)
 {
 putchar(',');
 putchar(' ');
