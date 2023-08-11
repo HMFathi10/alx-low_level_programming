@@ -19,8 +19,12 @@ for (i = 0; i < 10; i++)
 {
 for (j = n; j < 10; j++)
 {
-for (k = i + (i * 1); k < 10; k++)
+for (k = i + 1; k < 10; k++)
 {
+if ( k == i && j == n)
+{
+  continue;
+}
 putchar(n + '0');
 putchar(i + '0');
 putchar(' ');
