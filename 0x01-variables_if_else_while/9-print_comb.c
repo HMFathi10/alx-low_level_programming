@@ -2,13 +2,15 @@
 /**
  * main - Entry point
  *
- * Description: This program prints all possible combinations of single-digit numbers. 
+ * Description: This program prints all possible combinations
  *
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	for (int n = 0; n < 10; n++)
+	int n;
+
+	for (n = 0; n < 10; n++)
 	{
 		putchar(n+'0');
 		putchar(',');
