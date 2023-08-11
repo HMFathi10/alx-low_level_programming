@@ -3,7 +3,6 @@
 #include <stdio.h>
 
 /**
- *
  * main - Entry point
  *
  * Description: This program print the last digit
