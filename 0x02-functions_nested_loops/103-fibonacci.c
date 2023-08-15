@@ -10,18 +10,16 @@ int main(void)
 {
 	long int n = 1;
 	long int m = 2;
-	int max;
+	long int even = 0;
 
-	printf("%ld, %ld, ", n, m);
-	for (max = 0; max < 48; max++)
+	while (1)
 	{
 		if (m + n > 4000000)
 			break;
-		printf("%ld", m + n);
+		if ((m + n) % 2 == 0)
+			even += m + n;
 		m += n;
 		n = m - n;
-		if (max != 47)
-			printf(", ");
 	}
 	printf("\n");
 	return (0);
