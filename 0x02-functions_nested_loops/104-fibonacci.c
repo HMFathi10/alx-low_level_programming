@@ -8,11 +8,11 @@
  */
 int main(void)
 {
-	long unsigned int n = 0;
-	long unsigned int m = 1;
+	unsigned int long n = 0;
+	unsigned int long m = 1;
 	int max;
 
-	for (max = 0; max <= 98; max++)
+	for (max = 0; max <= 95; max++)
 	{
 		printf("%lu", m + n);
 		m += n;
