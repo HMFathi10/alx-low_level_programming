@@ -11,18 +11,22 @@ int main(void)
 	long int n = 0;
 	int i = 1;
 
-	while (i < 1024)
+	while (true)
 	{
+		if (i * 5 >= 1024)
+			break;
 		n += (i * 5);
 		i++;
 	}
 	i = 1;
-	while (i < 1024)
+	while (true)
 	{
+		if (i *3 >= 1024)
+			break;
 		if (((i * 3) % 5) != 0)
 			n += (i * 3);
 		i++;
 	}
-	printf("%ld", n);
+	printf("%ld\n", n);
 	return (0);
 }
