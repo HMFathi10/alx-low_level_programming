@@ -21,6 +21,6 @@ int main(void)
 		m += n;
 		n = m - n;
 	}
-	printf("\n");
+	printf("%ld\n", even);
 	return (0);
 }
