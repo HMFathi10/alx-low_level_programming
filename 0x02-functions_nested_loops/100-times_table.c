@@ -1,12 +1,14 @@
 #include "main.h"
 
 /**
- * times_table_table -  prints the last digit of a number.
+ * print_times_table -  prints the last digit of a number.
  * @n: is an integer
  * Return: the last digit of number.
  */
 void print_times_table(int n)
 {
+	if (n > 15 || n < 0)
+		return ;
 	int i;
 	int j;
 
