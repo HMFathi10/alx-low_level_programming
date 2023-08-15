@@ -21,7 +21,7 @@ int main(void)
 	i = 1;
 	while (1)
 	{
-		if (i *3 >= 1024)
+		if (i * 3 >= 1024)
 			break;
 		if (((i * 3) % 5) != 0)
 			n += (i * 3);
