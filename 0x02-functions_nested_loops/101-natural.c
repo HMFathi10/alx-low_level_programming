@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	long long int n = 0;
+	long int n = 0;
 	int i = 1;
 
 	while (i < 1024)
@@ -20,7 +20,7 @@ int main(void)
 	while (i < 1024)
 	{
 		if (((i *3) % 5) != 0)
-			n + = (i * 3);
+			n += (i * 3);
 		i++;
 	}
 	printf("%d", n);
