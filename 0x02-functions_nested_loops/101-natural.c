@@ -11,7 +11,7 @@ int main(void)
 	long int n = 0;
 	int i = 1;
 
-	while (true)
+	while (1)
 	{
 		if (i * 5 >= 1024)
 			break;
@@ -19,7 +19,7 @@ int main(void)
 		i++;
 	}
 	i = 1;
-	while (true)
+	while (1)
 	{
 		if (i *3 >= 1024)
 			break;
