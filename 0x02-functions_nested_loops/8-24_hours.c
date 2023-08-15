@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * print_last_digit -  prints the last digit of a number.
- * @n: is an integer.
- * Return: the last digit of number.
+ * jack_bauer -  prints the last digit of a number.
+ * Return:Void
  */
-int print_last_digit(int n)
+void jack_bauer(void)
 {
 	int h;
 	int m;
