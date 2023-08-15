@@ -10,7 +10,7 @@ int main(void)
 {
 	long int n = 1;
 	long int m = 2;
-	long int even = 0;
+	long int even = m;
 
 	while (1)
 	{
