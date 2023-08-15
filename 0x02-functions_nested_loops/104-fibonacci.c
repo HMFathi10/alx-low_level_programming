@@ -17,7 +17,7 @@ int main(void)
 		printf("%lu", m + n);
 		m += n;
 		n = m - n;
-		if (max != 98)
+		if (max != 95)
 			printf(", ");
 	}
 	printf("\n");
