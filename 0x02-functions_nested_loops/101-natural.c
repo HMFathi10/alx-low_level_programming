@@ -23,6 +23,6 @@ int main(void)
 			n += (i * 3);
 		i++;
 	}
-	printf("%d", n);
+	printf("%ld", n);
 	return (0);
 }
