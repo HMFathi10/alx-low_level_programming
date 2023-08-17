@@ -1,11 +1,11 @@
 #include "main.h"
 
 /**
- * print_line - prints "_".
+ * print_diagonal - prints " ".
  * @n: is integer
  * Return: void
  */
-void print_line(int n)
+void print_diagonal(int n)
 {
 	if (n <= 0)
 		_putchar('\n');
