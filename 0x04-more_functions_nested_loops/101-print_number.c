@@ -25,11 +25,11 @@ void print_number(int n)
 		i *= 10;
 	}
 
-	while (i >= 1)
+	while (i >= 10)
 	{
 		if (neg == 1)
 		{
-			_putchar(' ');
+			_putchar('-');
 			neg = 0;
 		}
 		_putchar((n % i) / (i / 10) + 48);
