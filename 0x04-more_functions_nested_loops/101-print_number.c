@@ -20,7 +20,7 @@ void print_number(int n)
 			n *= -1;
 		}
 		len = n / i;
-		if (len < 10)
+		if (len <= 0)
 			break;
 		i *= 10;
 	}
