@@ -8,32 +8,12 @@
  */
 void print_number(int n)
 {
-	int i = 10;
-	int len;
-	int neg = 0;
-
-	while (1)
+	if (n < 0)
 	{
-		if (n < 0)
-		{
-			neg = 1;
-			n *= -1;
-		}
-		len = n / i;
-		if (len <= 0)
-			break;
-		i *= 10;
+		_putchar('-');
+		n = -n;
 	}
-
-	while (i >= 10)
-	{
-		if (neg == 1)
-		{
-			_putchar('-');
-			neg = 0;
-		}
-		_putchar((n % i) / (i / 10) + 48);
-		n %= i;
-		i /= 10;
-	}
+	if ((n / 10) > 0)
+		print_number(n / 10);
+	_putchar((n % 10) + 48);
 }
