@@ -2,7 +2,7 @@
 
 /**
  * print_line - prints "_".
- *
+ * @n: is integer
  * Return: void
  */
 void print_line(int n)
