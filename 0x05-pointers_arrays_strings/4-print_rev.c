@@ -2,9 +2,9 @@
 
 /**
  * print_rev - Call printRec.
+ * printRec - Pritn string
  * @s: is a string
  * Return: Void
- * printRec - Pritn string
  */
 void printRec(char *s)
 {
