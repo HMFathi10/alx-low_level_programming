@@ -15,8 +15,12 @@ void rev_string(char *s)
 		i++;
 	while (i--)
 	{
-		a[j++] = s[i];
+		j++;
+		a[j] = s[i];
 	}
 	while (i < j)
-		s[++i] = a[i];
+	{
+		i++;
+		s[i] = a[i];
+	}
 }
