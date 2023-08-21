@@ -10,7 +10,7 @@ void print_array(int *a, int n)
 {
 	int i = 0;
 
-	while (n--)
+	while (n > 0 && n--)
 	{
 		printf("%d", a[i++]);
 		if (n)
