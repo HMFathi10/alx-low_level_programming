@@ -5,8 +5,6 @@
  * @s: is a string
  * Return: Void
  * printRec - Pritn string
- * @s: is a string
- * Return: void
  */
 void printRec(char *s)
 {
