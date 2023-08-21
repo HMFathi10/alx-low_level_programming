@@ -1,9 +1,12 @@
 #include "main.h"
 
 /**
- * print_rev - Print string.
+ * print_rev - Call printRec.
  * @s: is a string
  * Return: Void
+ * printRec - Pritn string
+ * @s: is a string
+ * Return: void
  */
 void printRec(char *s)
 {
@@ -15,7 +18,10 @@ void printRec(char *s)
 void print_rev(char *s)
 {
 	if (*s == 0)
-		return;
-	printRec(s);
-	_putchar('\n');
+		_putchar('\n');
+	else
+	{
+		printRec(s);
+		_putchar('\n');
+	}	
 }
