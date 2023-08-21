@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int num;
+	int sum;
 	char c;
 
 	srand(time(NULL));
