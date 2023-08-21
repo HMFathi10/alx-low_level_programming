@@ -14,6 +14,8 @@ void printRec(char *s)
 
 void print_rev(char *s)
 {
+	if (*s == 0)
+		return;
 	printRec(s);
 	_putchar('\n');
 }
