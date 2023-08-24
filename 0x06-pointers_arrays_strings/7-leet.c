@@ -19,6 +19,7 @@ char *leet(char *s)
 			if (s[st] == sym[j])
 			{
 				s[st] = eq[j] + '0';
+				break;
 			}
 		}
 	}
