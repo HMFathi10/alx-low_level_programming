@@ -8,10 +8,10 @@
 char *leet(char *s)
 {
 	char *sym = "OL?EA??T";
-	int st = -1;
-	int j = 0;
+	int st = 0;
+	int j;
 
-	while (s[++st] != '\0')
+	while (s[st] != '\0')
 	{
 		for (j = 0; j < 7; j++)
 		{
@@ -21,6 +21,7 @@ char *leet(char *s)
 				break;
 			}
 		}
+		st++;
 	}
 	return (s);
 }
