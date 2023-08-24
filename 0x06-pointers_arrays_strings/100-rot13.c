@@ -21,11 +21,6 @@ char *rot13(char *s)
 				s[st] = eq[j];
 				break;
 			}
-			else if (s[st] == eq[j])
-			{
-				s[st] = sym[j];
-				break;
-			}
 		}
 	}
 	return (s);
