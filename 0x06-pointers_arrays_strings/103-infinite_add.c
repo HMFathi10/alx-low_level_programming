@@ -40,9 +40,9 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	if (rem && size_r >= 0)
 	{
 		r[--size_r] = (rem % 10) + '0';
-		retunr (r + size_r);
+		return (r + size_r);
 	}
 	if (rem && size_r < 0)
-		return (0)
+		return (0);
 	return (r + size_r + 1);
 }
