@@ -8,6 +8,7 @@
 char *cap_string(char *s)
 {
 	char sym[];
+	
 	sym = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', ' ', '\n', '\t'};
 	int start = -1;
 	int j = 0;
