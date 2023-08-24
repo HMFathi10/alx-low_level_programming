@@ -11,9 +11,9 @@ char *leet(char *s)
 	int st = 0;
 	int j;
 
-	while (s[st] != '\0')
+	while (s[st])
 	{
-		for (j = 0; j < 7; j++)
+		for (j = 0; j <= 7; j++)
 		{
 			if (s[st] == sym[j] || s[st] - 32 == sym[j])
 			{
