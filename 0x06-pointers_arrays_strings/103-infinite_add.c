@@ -23,7 +23,7 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	{
 		if (i > 0 && j > 0)
 		{
-			result = (n1[i - 1] - '0') + (n2 [j - 1] - '0') + rem;
+			result = (n1[i - 1] - '0') + (n2[j - 1] - '0') + rem;
 			r[--size_r] = (result % 10) + '0';
 			rem = result / 10;
 			i--;
