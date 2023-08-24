@@ -7,18 +7,17 @@
  */
 char *leet(char *s)
 {
-	char *sym = "aAeEoOtTlL";
-	int eq[10] = {4, 4, 3, 3, 0, 0, 7, 7, 1, 1};
+	char *sym = "OL?EA??T";
 	int st = -1;
 	int j = 0;
 
 	while (s[++st] != '\0')
 	{
-		for (j = 0; j < 9; j++)
+		for (j = 0; j < 7; j++)
 		{
-			if (s[st] == sym[j])
+			if (s[st] == sym[j] || s[st] - 32 == sym[j])
 			{
-				s[st] = eq[j] + '0';
+				s[st] = j + '0';
 				break;
 			}
 		}
