@@ -7,7 +7,8 @@
  */
 char *cap_string(char *s)
 {
-	char sym[] = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', ' ', '\n', '\t'}; 
+	char sym[];
+	sym = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', ' ', '\n', '\t'};
 	int start = -1;
 	int j = 0;
 
@@ -15,7 +16,7 @@ char *cap_string(char *s)
 	{
 		if ((s[start] >= 'a' && s[start] <= 'z') || (s[start] >= 'A' && s[start] <= 'Z'))
 			continue;
-		for(j =0; j < 13; j++)
+		for (j = 0; j < 13; j++)
 		{
 			if (s[start] == sym[j])
 			{
