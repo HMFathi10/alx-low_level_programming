@@ -10,36 +10,32 @@
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int i = -1;
-	int j = -1;
 	int rem = 0;
 	int result = 0;
 
-	while (n1[++i] != '\0');
-	while (n2[++j] != '\0');
-	if (i + 1 >= size_r || j + 1 >= size_r)
-		return (0);
-	for (; j && i; i--, j--, size_r--)
+	for (; *n1 && *n2; n1--, n2--, size_r--)
 	{
-		result = (n1[i - 1] - '0') + (n2[j - 1] - '0') + rem;
+		result = (*n1 - '0') + (*n2 - '0') + rem;
 		r[size_r] = (result % 10) + '0';
 		rem = result / 10;
 	}
-	while (i)
+	while (*n1)
 	{
-		result = n1[--i] - '0' + rem;
-		r[--size_r] = (result % 10) + '0';
+		result = (*n1 - '0') + rem;
+		r[size_r--] = (result % 10) + '0';
 		rem = result / 10;
+		n1--;
 	}
-	while (j)
+	while (*n2)
 	{
-		result = n2[--j] - '0' + rem;
-		r[--size_r] = (result % 10) + '0';
+		result = (*n2 - '0') + rem;
+		r[size_r--] = (result % 10) + '0';
 		rem = result / 10;
+		n2--;
 	}
 	if (rem && size_r >= 0)
 	{
-		r[--size_r] = (rem % 10) + '0';
+		r[size_r] = (rem % 10) + '0';
 		return (r + size_r);
 	}
 	if (rem && size_r < 0)
