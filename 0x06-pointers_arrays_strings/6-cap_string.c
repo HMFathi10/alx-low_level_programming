@@ -7,9 +7,7 @@
  */
 char *cap_string(char *s)
 {
-	char sym[];
-
-	sym = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', ' ', '\n', '\t'};
+	char *sym = ",;.!?(){}\n\t\" ";
 	int st = -1;
 	int j = 0;
 
