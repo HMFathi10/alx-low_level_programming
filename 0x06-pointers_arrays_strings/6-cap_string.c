@@ -8,22 +8,22 @@
 char *cap_string(char *s)
 {
 	char sym[];
-	
+
 	sym = {',', ';', '.', '!', '?', '"', '(', ')', '{', '}', ' ', '\n', '\t'};
-	int start = -1;
+	int st = -1;
 	int j = 0;
 
-	while (s[++start] != '\0')
+	while (s[++st] != '\0')
 	{
-		if ((s[start] >= 'a' && s[start] <= 'z') || (s[start] >= 'A' && s[start] <= 'Z'))
+		if ((s[st] >= 'a' && s[st] <= 'z') || (s[st] >= 'A' && s[st] <= 'Z'))
 			continue;
 		for (j = 0; j < 13; j++)
 		{
-			if (s[start] == sym[j])
+			if (s[st] == sym[j])
 			{
-				if (s[start + 1] >= 'a' && s[start + 1] <= 'z')
+				if (s[st + 1] >= 'a' && s[st + 1] <= 'z')
 				{
-					s[start + 1] = s[start + 1] - 32;
+					s[st + 1] = s[st + 1] - 32;
 					break;
 				}
 			}
