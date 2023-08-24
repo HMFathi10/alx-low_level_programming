@@ -1,5 +1,8 @@
-#include <stdio.h>
-
+#include "main.h"
+/**
+ * main - change value 98;
+ * Return: Always (0)
+*/
 int main(void)
 {
   int n;
