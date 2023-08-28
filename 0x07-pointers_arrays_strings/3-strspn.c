@@ -11,11 +11,11 @@ unsigned int _strspn(char *s, char *accept)
 	unsigned int bytes = 0;
 	int i;
 
-	for (; *s >= '\0'; s++)
+	for (; *s; s++)
 	{
 		for (i = 0; accept[i]; i++)
 		{
-			if (*s == c)
+			if (*s == accept[i])
 			{
 				bytes++;
 				break;
