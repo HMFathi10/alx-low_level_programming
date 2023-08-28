@@ -2,7 +2,7 @@
 
 /**
  * *_strstr - Find string.
- * @heystack: string
+ * @haystack: string
  * @needle: string
  * Return: char
  */
