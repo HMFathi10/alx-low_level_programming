@@ -3,6 +3,7 @@
 /**
  * *print_diagsums - sum.
  * @a: Square D array
+ * @size: is the size
  * Return: void
  */
 void print_diagsums(int *a, int size)
