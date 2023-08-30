@@ -23,9 +23,10 @@ int check(char *s, int i, int size)
  */
 int is_palindrome(char *s)
 {
-	int size = -1;
+	int size = 0;
 	int i = 0;
 
-	while (s[++size] != '\0');
+	while (s[size] != '\0')
+		size++;
 	return (check(s, i, size - 1));
 }
