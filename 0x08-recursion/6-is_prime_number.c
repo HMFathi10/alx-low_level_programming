@@ -22,5 +22,5 @@ int calc(int n, int number)
  */
 int is_prime_number(int n)
 {
-	return calc(n / 2, n);
+	return (calc(n / 2, n));
 }
