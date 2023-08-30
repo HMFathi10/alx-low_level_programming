@@ -12,7 +12,7 @@ int calc(int n, int base)
 		return (n);
 	if (n * n > base)
 		return (-1);
-	return (calc(n + 1 , base));
+	return (calc(n + 1, base));
 }
 
 /**
