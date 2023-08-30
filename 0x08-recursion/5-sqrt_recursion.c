@@ -6,7 +6,7 @@
  * @base: number
  * Return: int
  */
-int calc(int n)
+int calc(int n, int base)
 {
 	if (n * n == base)
 		return (n);
