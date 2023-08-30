@@ -6,13 +6,13 @@
  * @base: number
  * Return: int
  */
-int calc(int n)
+int calc(int n, int base)
 {
 	if (n * n == base)
 		return (n);
 	if (n * n > base)
 		return (-1);
-	return (calc(n + 1 , base));
+	return (calc(n + 1, base));
 }
 
 /**
@@ -22,5 +22,5 @@ int calc(int n)
  */
 int _sqrt_recursion(int n)
 {
-	calc(1, n);
+	return (calc(1, n));
 }
