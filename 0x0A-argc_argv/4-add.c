@@ -14,19 +14,20 @@
 
 int main(int argc, char *argv[])
 {
-	int result = 0;
-	int num1;
+	int i, j, result = 0;
 
-	while (argc-- >= 2)
+	for (i = 1; i < argc; i++)
 	{
-		sscanf(argv[argc], "%d", &num1);
-		if (isdigit(num1))
+		for (j = 0; argv[i][j] != '\0'; j++)
 		{
-			printf("Error\n");
-			return (1);
+			if (!isdigit(argv[i][j]))
+			{
+				printf("Error\n");
+				return (1);
+			}
 		}
-		result += num1;
+		result += atoi(argv[i]);
 	}
-	printf("%d\n", result);
+	printf("%d\n", add);
 	return (0);
 }
