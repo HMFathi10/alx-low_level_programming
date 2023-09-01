@@ -1,22 +1,34 @@
 #include "main.h"
 
 /**
- * _atoi - Reverse.
- * @s: is the integer
- * Return: char
+ * _atoi - converts a string to an integer.
+ * @s: input string.
+ * Return: integer.
  */
 int _atoi(char *s)
 {
-	unsigned int n = 0;
-	int neg = 1;
+	unsigned int count = 0, size = 0, oi = 0, pn = 1, m = 1, i;
 
-	do {
-		if (*s == '-')
-			neg *= -1;
-		else if (*s >= '0' && *s <= '9')
-			n = (n * 10) + (*s - 48);
-		else if (n > 0)
+	while (*(s + count) != '\0')
+	{
+		if (size > 0 && (*(s + count) < '0' || *(s + count) > '9'))
 			break;
-	} while (*s++);
-	return (n * neg);
+		if (*(s + count) == '-')
+			pn *= -1;
+
+		if ((*(s + count) >= '0') && (*(s + count) <= '9'))
+		{
+			if (size > 0)
+				m *= 10;
+			size++;
+		}
+		count++;
+	}
+
+	for (i = count - size; i < count; i++)
+	{
+		oi = oi + ((*(s + i) - 48) * m);
+		m /= 10;
+	}
+	return (oi * pn);
 }
