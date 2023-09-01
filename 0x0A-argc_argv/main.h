@@ -1,7 +1,4 @@
-#ifndef FILE_MAIN
-#define FILE_MAIN
-
-/*a list that was given from the task 0 */
-
-
-#endif
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <time.h>
