@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
 
 	if (argc > 1)
 	{
-		result = argv[1] * argv[2];
+		result = (int)argv[1] * (int)argv[2];
 		printf("%s\n", result);
 	}
 	else
