@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
 	int num1;
 
 	while (argc-- >= 2)
-	{		
+	{
 		sscanf(argv[argc], "%d", &num1);
 		if (isdigit(num1))
 		{
