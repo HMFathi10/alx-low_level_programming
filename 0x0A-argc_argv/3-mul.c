@@ -11,17 +11,8 @@
 
 int main(int argc, char *argv[])
 {
-	int result = 0;
-	int num1;
-	int num2;
-
-	if (argc > 1)
-	{
-		sscanf(argv[1], "%d", &num1);
-		sscanf(argv[2], "%d", &num2);
-		result = num1 * num2;
-		printf("%d\n", result);
-	}
+	if (argc == 3)
+		printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 	else
 	{
 		printf("Error\n");
