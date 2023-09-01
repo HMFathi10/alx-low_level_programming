@@ -1,4 +1,7 @@
 #include "main.h"
+#include <string.h>
+#include <stdlib.h>
+#include <ctype.h>
 
 /**
  * main - Entry point of program
@@ -13,19 +16,17 @@ int main(int argc, char *argv[])
 {
 	int result = 0;
 	int num1;
-	int num2;
 
-	if (argc > 1)
-	{
-		sscanf(argv[1], "%d", &num1);
-		sscanf(argv[2], "%d", &num2);
-		result = num1 * num2;
-		printf("%d\n", result);
+	while (argc-- >= 2)
+	{		
+		sscanf(argv[argc], "%d", &num1);
+		if (isdigit(num1))
+		{
+			printf("Error\n");
+			return (1);
+		}
+		result += num1;
 	}
-	else
-	{
-		printf("Error\n");
-		return (1);
-	}
+	printf("%d\n", result);
 	return (0);
 }
