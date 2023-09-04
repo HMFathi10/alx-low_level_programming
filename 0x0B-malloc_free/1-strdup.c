@@ -14,9 +14,10 @@ char *_strdup(char *str)
 		return (NULL);
 	while(str[size] != '\0')
 		size++;
-	ptr = malloc(size);
+	ptr = malloc(size + 1);
 	if (ptr == NULL)
 		return (NULL);
+	ptr[size] = '\0';
 	for (; size > 0; size--)
 	{
 		ptr[size - 1] = str[size - 1];
