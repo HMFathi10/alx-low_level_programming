@@ -15,15 +15,15 @@ char *argstostr(int ac, char **av)
 	if (ac < 1 || av == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
-        {
-                j = 0;
-                while (*(av[i] + j) != '\0')
-                {
+	{
+		j = 0;
+		while (*(av[i] + j) != '\0')
+		{
 			size++;
-                        j++;
-                }
+			j++;
+		}
 		size++;
-        }
+	}
 	ptr = malloc((size + 1) * sizeof(char));
 	ptr[size - 1] = '\0';
 	size = 0;
