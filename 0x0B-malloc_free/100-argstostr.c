@@ -1,10 +1,10 @@
 #include "main.h"
 
 /**
- * **alloc_grid - allocate grid with 0.
- * @width: int
- * @height: int
- * Return: int
+ * *argstostr - allocate grid with 0.
+ * @ac: int
+ * @av: char
+ * Return: char
  */
 char *argstostr(int ac, char **av)
 {
