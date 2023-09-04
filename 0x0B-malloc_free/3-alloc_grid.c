@@ -13,10 +13,22 @@ int **alloc_grid(int width, int height)
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
-	ptr = calloc(height, sizeof(int));
-	for (; i < height; i++)
-		ptr[i] = calloc(width, sizeof(int));
+	ptr = calloc(height, sizeof(int *));
 	if (ptr == NULL)
+	{
+		free(ptr);
 		return (NULL);
+	}
+	for (; i < height; i++)
+	{
+		ptr[i] = calloc(width, sizeof(int));
+		if (ptr[i] == NULL)
+		{
+			for (i--; i >= 0; i--)
+				free(ptr[i]);
+			free(ptr);
+			return (NULL);
+		}
+	}
 	return (ptr);
 }
