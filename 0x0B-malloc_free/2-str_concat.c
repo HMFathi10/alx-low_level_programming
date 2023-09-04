@@ -14,9 +14,9 @@ char *str_concat(char *s1, char *s2)
 
 	if (s1 == NULL && s2 == NULL)
 		return (NULL);
-	while (s1[size] != '\0' && s1 != NULL)
+	while (s1 != NULL && s1[size] != '\0')
 		size++;
-	while (s2[size1] && s2 != NULL)
+	while (s2 != NULL && s2[size1])
 		size1++;
 	ptr = malloc(size + size1 + 1);
 	if (ptr == NULL)
