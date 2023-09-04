@@ -16,9 +16,6 @@ int **alloc_grid(int width, int height)
 	ptr = calloc(height, sizeof(int));
 	for (; i < height; i++)
 		ptr[i] = calloc(width, sizeof(int));
-	ptr = calloc(width, sizeof(int));
-	for (; i < width; i++)
-		ptr[i] = calloc(height, sizeof(int));
 	if (ptr == NULL)
 		return (NULL);
 	return (ptr);
