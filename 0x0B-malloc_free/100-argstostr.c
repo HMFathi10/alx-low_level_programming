@@ -23,21 +23,20 @@ char *argstostr(int ac, char **av)
                         j++;
                 }
         }
-	ptr = malloc((size + 1) * sizeof(char));
-	ptr[size] = '\0';
+	ptr = malloc(size * sizeof(char));
+	ptr[size - 1] = '\0';
 	size = 0;
 	for (i = 1; i < ac; i++)
 	{
 		j = 0;
 		while (*(av[i] + j) != '\0')
 		{
-			if (*(av[i] + j + 1) == '\0')
-				ptr[size] = '\n';
-			else
-				ptr[size] = *(av[i] + j);
+			ptr[size] = *(av[i] + j);
 			j++;
 			size++;
 		}
+		if (i + 1 < ac)
+			ptr[size++] = '\n';
 	}
-	return (NULL);
+	return (ptr);
 }
