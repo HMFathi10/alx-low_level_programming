@@ -1,5 +1,23 @@
 #include "main.h"
 
+
+int countWords(char *str)
+{
+	int i = 0, words = 0;
+
+	while (str[i] != '\0')
+	{
+		if (str[i] != ' ')
+		{
+			words++;
+			for (; str[i] != ' ' && str[i] != '\0'; i++)
+				;
+		}
+		else
+			i++;
+	}
+	return (words);
+}
 /**
  * **strtow - allocate grid with 0.
  * @str: string
@@ -13,16 +31,7 @@ char **strtow(char *str)
 
 	if (str == NULL || str[0] == '\0')
 		return (NULL);
-	while (str[i] != '\0')
-	{
-		if (str[i] != ' ')
-		{
-			words++;
-			for (; str[i] != ' ' && str[i] != '\0'; i++);
-		}
-		else
-			i++;
-	}
+	words = countWords(str);
 	if (words == 0)
 		return (NULL);
 	ptr = malloc((words + 1) * sizeof(char *));
