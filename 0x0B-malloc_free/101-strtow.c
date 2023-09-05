@@ -23,6 +23,8 @@ char **strtow(char *str)
 		else
 			i++;
 	}
+	if (words == 0)
+		return (NULL);
 	ptr = malloc((words + 1) * sizeof(char *));
 	for (size = 0, i = 0; size < words; size++)
 	{
