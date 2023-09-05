@@ -8,18 +8,17 @@
 char **strtow(char *str)
 {
 	char **ptr, *word;
-	int i, words = 0, j, count;
+	int i = 0, words = 0, j, count;
 	int size = 0;
 
-	if (str == NULL || *str == "\n")
+	if (str == NULL || str[0] == '\0')
 		return (NULL);
 	while (str[i] != '\0')
 	{
 		if (str[i] != ' ')
 		{
 			words++;
-			for (; str[i] != ' ' && str[i] != '\0'; i++)
-			{}
+			for (; str[i] != ' ' && str[i] != '\0'; i++);
 		}
 		else
 			i++;
