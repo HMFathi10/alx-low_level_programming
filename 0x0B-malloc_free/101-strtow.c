@@ -1,6 +1,10 @@
 #include "main.h"
 
-
+/**
+ * **countWords - allocate grid with 0.
+ * @str: string
+ * Return: int
+ */
 int countWords(char *str)
 {
 	int i = 0, words = 0;
