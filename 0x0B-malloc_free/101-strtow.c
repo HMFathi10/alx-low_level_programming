@@ -8,10 +8,10 @@
 char **strtow(char *str)
 {
 	char **ptr, *word;
-	int i = 0, words = 0, j, count;
+	int i = 0, words = 0, j = 0, count = 0;
 	int size = 0;
 
-	if (str == NULL || *str == '\0')
+	if (str == NULL || str[0] == '\0')
 		return (NULL);
 	while (str[i] != '\0')
 	{
