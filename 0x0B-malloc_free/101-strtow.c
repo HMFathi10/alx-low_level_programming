@@ -11,7 +11,11 @@ char **strtow(char *str)
 	int i = 0, words = 0, j, count;
 	int size = 0;
 
+<<<<<<< HEAD
 	if (str == NULL || str[0] == '\0')
+=======
+	if (str == NULL || *str == '\0')
+>>>>>>> eff69926778f2874f4cc1c6e66a67eed3a3423b1
 		return (NULL);
 	while (str[i] != '\0')
 	{
