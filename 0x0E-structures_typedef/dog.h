@@ -1,6 +1,7 @@
 #ifndef FUN
 #define FUN
 #include <stdio.h>
+#include <stdlib.h>
 
 /**
  * dog_t - Typedef for struct dog
