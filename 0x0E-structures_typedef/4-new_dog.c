@@ -20,7 +20,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	for (nameLen = 0; name[nameLen]; nameLen++)
 		;
 	for (ownerLen = 0; owner[ownerLen]; ownerLen++)
-                ;
+		;
 	d->name = malloc(nameLen + 1);
 	d->owner = malloc(ownerLen + 1);
 	if (!(d->name) || !(d->owner))
