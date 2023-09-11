@@ -1,5 +1,6 @@
 #ifndef FUN
 #define FUN
+#include <stdio.h>
 /**
  * struct dog - Short description
  * @name: First member
@@ -15,4 +16,5 @@ struct dog
 	char *owner;
 };
 void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
 #endif
