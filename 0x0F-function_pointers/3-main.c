@@ -1,10 +1,8 @@
 #include "3-calc.h"
-
 /**
  * main - Entiry point
  * @argc: int.
  * @argv: char.
- *
  * Return: Always 0.
  */
 int main(int argc, char *argv[])
