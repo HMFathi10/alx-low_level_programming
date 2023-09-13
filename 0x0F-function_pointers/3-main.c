@@ -1,5 +1,4 @@
 #include "3-calc.h"
-
 /**
  * main - Entiry point
  * @argc: int.
