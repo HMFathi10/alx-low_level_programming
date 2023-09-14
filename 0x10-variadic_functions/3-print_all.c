@@ -22,12 +22,18 @@ void print_all(const char * const format, ...)
 				printf("%c", va_arg(ap, int));
 				break;
 			case 'i':
+				if (i != 0)
+					print(", ");
 				printf("%d", va_arg(ap, int));
 				break;
 			case 'f':
+				if (i != 0)
+					printf(", ");
 				printf("%f", va_arg(ap, double));
 				break;
 			case 's':
+				if (i != 0)
+					printf(", ");
 				str = va_arg(ap, char *);
 				!str ? printf("(nil)") : printf("%s", str);
 				break;
