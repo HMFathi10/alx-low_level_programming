@@ -19,7 +19,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 		for (; i < n; i++)
 		{
 			string =  va_arg(ap, char *);
-			i < n - 1 ? printf("%s%s", string ? string : "(nil)", separator) :  printf("%s\n", string? string : "(nil)");
+			i < n - 1 ? printf("%s%s", string ? string : "(nil)", separator) :  printf("%s\n", string ? string : "(nil)");
 		}
 	va_end(ap);
 }
