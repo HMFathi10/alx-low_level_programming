@@ -9,7 +9,7 @@ int str_len(const char *str)
 {
 	int len = -1;
 
-	while(str[++len])
+	while (str[++len])
 		;
 	return (len);
 }
@@ -29,7 +29,7 @@ list_t *add_node(list_t **head, const char *str)
 		return (NULL);
 	new->str = strdup(str);
 	new->len = str_len(str);
-	if(*head)
+	if (*head)
 		new->next = *head;
 	else
 		new->next = NULL;
