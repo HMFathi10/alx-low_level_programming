@@ -1,17 +1,15 @@
-global main
+        SECTION .data
+msg:    db "Hello, Holberton", 0
+fmt:    db "%s", 10, 0
 
-section .text
+        SECTION .text
+        extern printf
+        global main
 main:
-  ; Move the string "Hello, Holberton" to the rdi register.
-  mov rdi, message
+        mov esi, msg
+        mov edi, fmt
+        mov eax, 0
+        call printf
 
-  ; Call the printf function.
-  call printf
-
-  ; Exit the program.
-  mov rax, 60
-  xor rdi, rdi
-  syscall
-
-section .data
-message: db "Hello, Holberton\n", 0
+        mov eax, 0
+        ret
