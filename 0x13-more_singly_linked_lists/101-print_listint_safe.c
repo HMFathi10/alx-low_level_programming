@@ -15,7 +15,6 @@ void free_temp_list(listptr_t **head)
 		while ((del = temp))
 		{
 			temp = temp->next;
-			free(del->p);
 			free(del);
 		}
 		*head = NULL;
