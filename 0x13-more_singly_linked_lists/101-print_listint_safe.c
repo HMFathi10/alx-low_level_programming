@@ -1,6 +1,6 @@
 #include "lists.h"
 
-/*
+/**
  * free_temp_list - free list
  * @head: listptr_t
  * Return: void
