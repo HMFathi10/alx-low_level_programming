@@ -1,10 +1,9 @@
 #include "lists.h"
 
 /**
- * delete_nodeint_at_index - print the list and return length.
+ * *reverse_listint - print the list and return length.
  * @head: listint_t
- * @index: int
- * Return: int
+ * Return: listint_t
  */
 listint_t *reverse_listint(listint_t **head)
 {
