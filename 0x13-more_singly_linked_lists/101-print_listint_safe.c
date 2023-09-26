@@ -46,7 +46,7 @@ size_t print_listint_safe(const listint_t *head)
 			tempptr = tempptr->next;
 			if (head == tempptr->p)
 			{
-				printf("[%p] %d\n", (void *)head, head->n);
+				printf("-> [%p] %d\n", (void *)head, head->n);
 				free_temp_list(&headTptr);
 				return (number);
 			}
