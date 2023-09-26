@@ -9,7 +9,7 @@ void free_temp_list(listptr_t **head)
 {
 	listptr_t *temp, *del;
 
-	if (*head)
+	if (head)
 	{
 		temp = *head;
 		while ((del = temp))
