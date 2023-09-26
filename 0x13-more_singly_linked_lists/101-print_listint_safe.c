@@ -1,6 +1,6 @@
 #include "lists.h"
 
-/*
+/**
  * free_temp_list - free list
  * @head: listptr_t
  * Return: void
@@ -9,7 +9,7 @@ void free_temp_list(listptr_t **head)
 {
 	listptr_t *temp, *del;
 
-	if (*head)
+	if (head)
 	{
 		temp = *head;
 		while ((del = temp))
@@ -46,7 +46,7 @@ size_t print_listint_safe(const listint_t *head)
 			tempptr = tempptr->next;
 			if (head == tempptr->p)
 			{
-				printf("[%p] %d\n", (void *)head, head->n);
+				printf("-> [%p] %d\n", (void *)head, head->n);
 				free_temp_list(&headTptr);
 				return (number);
 			}
