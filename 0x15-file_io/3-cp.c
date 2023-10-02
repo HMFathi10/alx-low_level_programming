@@ -4,17 +4,15 @@
  * main - check the code.
  * @argc: number of arguments.
  * @argv: arguments vector.
- *
  * Return: Always 0.
  */
-
 int main(int argc, char *argv[])
 {
 	char buffer[1024];
 	int fdfrom, fdto;
 	ssize_t numBytesRead, numBytesWrite;
 
-	if (argc !=3)
+	if (argc != 3)
 	{
 		dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");
 		exit(97);
