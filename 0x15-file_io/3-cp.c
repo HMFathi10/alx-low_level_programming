@@ -1,10 +1,11 @@
 #include "main.h"
 
 /**
- * append_text_to_file - add text ot file.
- * @filename: char
- * @text_content: char
- * Return: int
+ * main - check the code.
+ * @argc: number of arguments.
+ * @argv: arguments vector.
+ *
+ * Return: Always 0.
  */
 
 int main(int argc, char *argv[])
