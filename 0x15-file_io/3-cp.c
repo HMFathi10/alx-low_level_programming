@@ -14,9 +14,9 @@ int main(int argc, char *argv[])
 	int fdfrom, fdto;
 	ssize_t numBytesRead, numBytesWrite;
 
-	if (argc != 3)
+	if (argc !=3)
 	{
-			dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");
+		dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");
 		exit(97);
 	}
 	fdfrom = open(argv[1], O_RDONLY);
