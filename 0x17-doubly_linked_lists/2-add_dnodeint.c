@@ -1,9 +1,10 @@
 #include "lists.h"
 
 /**
- * dlistint_len - Get double linked list length.
- * @h: dlistint_t
- * Return: size_t
+ * *add_dnodeint - Add new node to double linked list .
+ * @head: dlistint_t
+ * @n: int
+ * Return: dlistint_t
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
