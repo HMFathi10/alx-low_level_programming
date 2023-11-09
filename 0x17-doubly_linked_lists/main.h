@@ -1,7 +1,6 @@
 #ifndef FILE_MAIN
 #define FILE_MAIN
 #include <stdio.h>
-#include <unistd.h>
 #include <stdlib.h>
 
 /**
@@ -20,4 +19,5 @@ typedef struct dlistint_s
 	struct dlistint_s *next;
 } dlistint_t;
 size_t print_dlistint(const dlistint_t *h);
+
 #endif
