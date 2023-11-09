@@ -1,9 +1,10 @@
 #include "lists.h"
 
 /**
- * free_dlistint - free to double linked list .
+ * *get_dnodeint_at_index - Get node from  double linked list .
  * @head: dlistint_t
- * Return: void
+ * @index: int
+ * Return: dlistint_t
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {
