@@ -1,4 +1,4 @@
-#include "main.h"
+#include "lists.h"
 
 /**
  * print_dlistint - print double linked list.
@@ -7,7 +7,7 @@
  */
 size_t print_dlistint(const dlistint_t *h)
 {
-	dlistint_t *current;
+	const dlistint_t *current;
 	int count = 0;
 
 	current = h;
@@ -16,7 +16,7 @@ size_t print_dlistint(const dlistint_t *h)
 	while (current)
 	{
 		printf("%d\n", current->n);
-		counrt++;
+		count++;
 		current = current->next;
 	}
 	return (count);
