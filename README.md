@@ -33,7 +33,7 @@ working in the C programming language. The specific list of projects contained f
 
 ## Author✍️
 
-* **[Hossam Mahmoud]([https://twitter.com/Aysuarex](https://www.linkedin.com/in/hossam-mahmoud-4897141a0/))** <[Hossam]([https://github.com/Aysuarex](https://github.com/HMFathi10))>
+* **[Hossam Mahmoud](https://www.linkedin.com/in/hossam-mahmoud-4897141a0/)** <[Hossam](https://github.com/HMFathi10)>
 
 ## Acknowledgements🙏
 
